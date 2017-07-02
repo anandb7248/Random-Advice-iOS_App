@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Random_Advice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,55 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Random Advice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqh-LH-JDm">
+                                <rect key="frame" x="36" y="50" width="303" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An Advice" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvm-AN-O0H">
+                                <rect key="frame" x="36" y="154" width="303" height="382"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="382" id="5WT-K7-6ms"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjR-2a-5SR">
+                                <rect key="frame" x="36" y="587" width="303" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="TF0-7m-cmt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Show Another Advice"/>
+                                <connections>
+                                    <action selector="showAnotherAdvice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ijk-uD-3f1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LjR-2a-5SR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="424-Ve-eRL"/>
+                            <constraint firstItem="LjR-2a-5SR" firstAttribute="top" secondItem="Yvm-AN-O0H" secondAttribute="bottom" constant="51" id="Gl5-5p-grU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LjR-2a-5SR" secondAttribute="trailing" constant="20" id="PdK-uI-1Ie"/>
+                            <constraint firstItem="Yvm-AN-O0H" firstAttribute="top" secondItem="lqh-LH-JDm" secondAttribute="bottom" constant="80" id="Uj5-20-iwg"/>
+                            <constraint firstItem="lqh-LH-JDm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="V8A-0k-t11"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yvm-AN-O0H" secondAttribute="trailing" constant="20" id="bTk-Gf-qtZ"/>
+                            <constraint firstItem="LjR-2a-5SR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="cZf-Gr-JZ4"/>
+                            <constraint firstItem="lqh-LH-JDm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="i5T-rn-Q1U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lqh-LH-JDm" secondAttribute="trailing" constant="20" id="mb8-N8-ioC"/>
+                            <constraint firstItem="Yvm-AN-O0H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="xk7-8F-5To"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adviceLabel" destination="Yvm-AN-O0H" id="ycV-j4-hax"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="85.599999999999994" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>

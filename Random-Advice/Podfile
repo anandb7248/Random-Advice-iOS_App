@@ -7,4 +7,5 @@ target 'Random-Advice' do
 
   # Pods for Random-Advice
 	pod 'SwiftyJSON'
+	pod ‘Alamofire’
 end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06DD635330431453F6F067E1 /* Pods_Random_Advice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271E472D6030CF381E75B419 /* Pods_Random_Advice.framework */; };
+		1C866F2A1F08E7ED007CE4AC /* ColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C866F291F08E7ED007CE4AC /* ColorProvider.swift */; };
 		1CDC37281F08C89D007A0309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDC37271F08C89D007A0309 /* AppDelegate.swift */; };
 		1CDC372A1F08C89D007A0309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDC37291F08C89D007A0309 /* ViewController.swift */; };
 		1CDC372D1F08C89D007A0309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CDC372B1F08C89D007A0309 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C866F291F08E7ED007CE4AC /* ColorProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorProvider.swift; sourceTree = "<group>"; };
 		1CDC37241F08C89D007A0309 /* Random-Advice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Random-Advice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDC37271F08C89D007A0309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CDC37291F08C89D007A0309 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				1CDC372E1F08C89D007A0309 /* Assets.xcassets */,
 				1CDC37301F08C89D007A0309 /* LaunchScreen.storyboard */,
 				1CDC37331F08C89D007A0309 /* Info.plist */,
+				1C866F291F08E7ED007CE4AC /* ColorProvider.swift */,
 			);
 			path = "Random-Advice";
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C866F2A1F08E7ED007CE4AC /* ColorProvider.swift in Sources */,
 				1CDC372A1F08C89D007A0309 /* ViewController.swift in Sources */,
 				1CDC37281F08C89D007A0309 /* AppDelegate.swift in Sources */,
 			);
@@ -376,6 +380,7 @@
 				1CDC37381F08C89D007A0309 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
